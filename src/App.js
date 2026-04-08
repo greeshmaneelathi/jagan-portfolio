@@ -50,21 +50,32 @@ export default function JaganPortfolio() {
       description:
         'Built an API-driven platform that extracts entities, classifies document types, and generates summaries from unstructured documents, combining intelligent document handling with production-ready backend design.',
       tech: 'FastAPI, OpenAI, PostgreSQL, Docker',
-      link: 'https://github.com/JaganAlleni/ai-document-intelligence',
+      githubLink: 'https://github.com/JaganAlleni/ai-document-intelligence',
+      liveLink: '',
     },
     {
       title: 'Real-Time Financial Dashboard',
       description:
         'Developed a live financial dashboard that streams market data with responsive charts, WebSocket updates, and real-time views designed for fast-moving analytical workflows.',
       tech: 'React, FastAPI, Redis, WebSockets, Docker',
-      link: 'https://github.com/JaganAlleni/realtime-financial-dashboard',
+      githubLink: 'https://github.com/JaganAlleni/realtime-financial-dashboard',
+      liveLink: '',
+    },
+    {
+      title: 'Jagan Portfolio Website',
+      description:
+        'Designed and built a personal portfolio website to present professional experience, featured work, technical strengths, and contact information in a polished recruiter-friendly format.',
+      tech: 'React, Tailwind CSS, JavaScript, Vercel',
+      githubLink: 'https://github.com/JaganAlleni/jagan-portfolio',
+      liveLink: '',
     },
     {
       title: 'Property Information Management Modernization',
       description:
         'Contributed to modernizing county-scale property and document workflows by moving legacy modules into Blazor, .NET Core, Angular, and Azure-integrated services built for security, maintainability, and long-term scale.',
       tech: 'ASP.NET Core, Blazor, Angular 14, Azure Functions, SQL Server',
-      link: 'https://github.com/JaganAlleni',
+      githubLink: 'https://github.com/JaganAlleni',
+      liveLink: '',
     },
   ];
 
@@ -284,15 +295,16 @@ export default function JaganPortfolio() {
                 <h3 className="text-2xl font-bold text-white">{project.title}</h3>
                 <p className="mt-4 leading-7 text-slate-300">{project.description}</p>
                 <p className="mt-5 text-sm text-slate-400">{project.tech}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 font-medium text-cyan-300 transition group-hover:translate-x-1 group-hover:text-white"
-                >
-                  Explore Project
-                  <span>→</span>
-                </a>
+                <div className="mt-6">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl border border-cyan-300/30 bg-cyan-400/10 px-4 py-2.5 font-medium text-cyan-200 transition hover:-translate-y-0.5 hover:border-cyan-200 hover:text-white"
+                  >
+                    GitHub Files
+                  </a>
+                </div>
               </div>
             ))}
           </div>
